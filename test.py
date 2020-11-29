@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 
 urls = [
-    "https://www.yahoo.co.jp/",
+    "https://lounge-steward.com/",
     "https://www.google.com/",
     "https://www.facebook.com/",
     "https://twitter.com/",
