@@ -1,16 +1,16 @@
 import xml.etree.ElementTree as ET
+
 urls = [
     "https://www.yahoo.co.jp/",
     "https://www.google.com/",
     "https://www.facebook.com/",
     "https://twitter.com/",
-    "https://paymap.jp",
+    "https://paymap.jp/",
 ]
 
 urlset = ET.Element('urlset')
 urlset.set("xmlns", "http://www.sitemaps.org/schemas/sitemap/0.9")
 tree = ET.ElementTree(element=urlset)
-
 
 for url in urls:
     url_element = ET.SubElement(urlset, 'url')
@@ -20,4 +20,3 @@ for url in urls:
     lastmod.text = "2019-01-12"
 
 tree.write('sitemap.xml', encoding='utf-8', xml_declaration=True)
-
