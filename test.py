@@ -20,3 +20,4 @@ for url in urls:
     lastmod.text = "2019-01-12"
 
 tree.write('sitemap.xml', encoding='utf-8', xml_declaration=True)
+
